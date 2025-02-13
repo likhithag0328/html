@@ -2,18 +2,15 @@
 <html lang="en">
   <head>
     <title>WEB PAGES</title>
-  </head>
-  <body
-    style="
-      background-color: black;
-      color: green;
-      font-family: fantasy;
-      text-align: center;
-    "
-  >
-    <div style="font-size: 150px; text-shadow: 0 0 30px green">QUICK LINKS</div>
-    <div
-      style="
+    <style>
+      body{
+        background-color: black;
+        color: green;
+        font-family: fantasy;
+        text-align: center;
+      }
+
+      .circle{
         width: 200px;
         height: 200px;
         background-color: rgba(0, 255, 0, 0.1);
@@ -23,17 +20,23 @@
         box-sizing: border-box;
         padding-top: 80px;
         margin: auto;
-      "
-    >
-      <a
-        href="cartoons.html"
-        style="
-          font-size: 30px;
-          text-decoration: none;
-          color: green;
-          text-shadow: 0 0 10px green;
-        "
-        >CARTOONS</a>
+      }
+      .link{
+        font-size: 30px;
+        text-decoration: none;
+        color: green;
+        text-shadow: 0 0 10px green;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div style="font-size: 150px; text-shadow: 0 0 30px green">QUICK LINKS</div>
+    <div class = "circle">
+      <a href="cartoons.html" class = "link">CARTOONS</a>
+    </div>
+    <div class = "circle">
+      <a href="buyology.html" class = "link">BUYOLOGY</a>
     </div>
     </body>
   </body>
