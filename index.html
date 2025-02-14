@@ -27,11 +27,64 @@
         color: green;
         text-shadow: 0 0 10px green;
       }
+      .eye{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(0,255,0,0.2); 
+        background-color: rgba(0,255,0,0.2);
+      }
+      .antennas{
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0,255,0,0.2); 
+        background-color: rgba(0,255,0,0.2);
+      }
+      #eyeSpace{
+        display: flex;
+        justify-content: space-around;
+      }
+      #mouth{
+        margin:5%;
+        font-size: 40px;
+        color:rgba(0, 255, 0, 0.2);
+        text-shadow: 0 0 10px green;
+      }
+      #antenna{
+        width:270px;
+        display: flex; 
+        justify-content: space-around; 
+        margin-left: 42.6%;
+        margin-bottom: -22px;
+      }
 
     </style>
   </head>
   <body>
     <div style="font-size: 150px; text-shadow: 0 0 30px green">QUICK LINKS</div>
+    <div id="antenna">
+      <div>
+        <div class="eye" style="margin-left: -36px; margin-bottom: -7px;"></div>
+        <div class="eye antennas" style="margin-left: -14px; margin-bottom: -1px;"></div>
+        <div class="eye antennas" style="margin-left: -7px; margin-bottom: -1px;"></div>
+        <div class="eye antennas"></div>
+      </div>
+      <div>
+        <div class="eye" style="margin-left: 90%;margin-bottom: -7px;"></div>
+        <div class="eye antennas" style="margin-left: 50%;margin-bottom: -1px;"></div>
+        <div class="eye antennas" style="margin-left: 23%;margin-bottom: -1px;"></div>
+        <div class="eye antennas"></div>
+      </div>
+  </div>
+    <div class = "circle">
+      <div id="eyeSpace">
+        <div class = "eye"></div>
+        <div class = "eye"></div>
+      </div>
+      <div id="mouth">⌣</div>
+    </div>
     <div class = "circle">
       <a href="cartoons.html" class = "link">CARTOONS</a>
     </div>
