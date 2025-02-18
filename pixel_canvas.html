@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Paint</title>
+    <title>Pixel Canvas</title>
     <style>
       h1 {
         font-family: "lucida grande";
         font-weight: 200;
         font-size: 70px;
-        color: hsl(0, 0%, 30%);
         text-align: center;
       }
       .container {
@@ -22,7 +21,6 @@
       }
 
       .items {
-        /* border-radius: 50%; */
         animation-duration: 1ms;
         animation-fill-mode: forwards;
         animation-name: paint;
@@ -31,6 +29,7 @@
           animation-play-state: running;
         }
       }
+
       @keyframes paint {
         to {
           box-shadow: 10px 10px 15px black;
