@@ -3,11 +3,22 @@
   <head>
     <title>Magic Slate</title>
     <style>
+      :root {
+        --bg-color: black;
+      }
+
       h1 {
         font-family: "lucida grande";
         font-weight: 200;
         font-size: 70px;
         text-align: center;
+      }
+
+      input {
+        margin-left: 15px;
+        width: 250px;
+        height: 250px;
+        border: none;
       }
 
       .container {
@@ -18,14 +29,14 @@
         grid-template-columns: repeat(150, 1fr);
         grid-template-rows: repeat(72, 1fr);
         box-shadow: 0 0 10px black;
-        margin: auto;
+        float: left;
       }
 
       .items {
         background-color: white;
         transition: background-color 5s ease-out;
         &:hover {
-          background-color: black;
+          background-color: var(--bg-color);
           transition: background-color 0s;
         }
       }
@@ -10836,5 +10847,12 @@
       <div class="items"></div>
       <div class="items"></div>
     </div>
+    <input type="color" id="colorPicker" />
+    <script>
+      const input = document.getElementById("colorPicker");
+      input.addEventListener("input", () => {
+        document.documentElement.style.setProperty("--bg-color", input.value);
+      });
+    </script>
   </body>
 </html>
